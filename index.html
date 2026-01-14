@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pig Disease Diagnosis Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Pig Disease Diagnosis Tool</h1>
+    <p>Enter at least 2 symptoms to see likely diseases, treatment, medicine, and prevention.</p>
+  </header>
+
+  <div class="hero">
+    <img src="pig.webp" alt="Pig illustration">
+  </div>
+
+  <main>
+    <div class="form-container">
+      <label for="symptoms">Enter Symptoms<emph>(comma separated):</emph></label>
+      <input type="text" id="symptoms" placeholder="e.g., fever, cough, diarrhea">
+      <button onclick="diagnose()">Diagnose</button>
+      <p class="error" id="error"></p>
+    </div>
+
+    <div class="results" id="result"></div>
+  </main>
+
+  <footer>
+    &copy; 2026 Pig Health Advisor by O-TECHY
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
